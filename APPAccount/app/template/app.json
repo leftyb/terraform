@@ -1,0 +1,22 @@
+[
+  {
+    "name": "contoso",
+    "image": "371538638536.dkr.ecr.eu-west-2.amazonaws.com/app:latest",
+    "memory": 2048,
+    "networkMode": "awsvpc",
+    "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/app",
+          "awslogs-region": "eu-west-2",
+          "awslogs-stream-prefix": "ecs"
+        }
+    },
+    "portMappings": [
+      {
+        "containerPort": 3000,
+        "protocol": "tcp"
+      }
+    ]
+  }
+]
