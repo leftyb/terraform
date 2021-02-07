@@ -30,8 +30,8 @@ module "codePipeline" {
   branch_name       = "main"
   bucket_name       = "contoso-app"
   name              = "app"                                 # for the role name
-  github_org        = "maherfayez"
-  github_token      = "3aa10a6974834d71d7e1d3596ef4291a93bb13fb"
+  github_org        = ""
+  github_token      = ""
   account_prod      = ""
   cluster_name_prod = "app"
 }
