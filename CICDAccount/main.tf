@@ -21,7 +21,7 @@ module "codeCommit" {
 }
 
 module "codePipeline" {
-  source            = "./codePipeline"
+  source            = "./CodePipeline"
   tags              = local.tags
   project_name      = "app"
   service_name      = "contoso"
